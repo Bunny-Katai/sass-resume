@@ -1,0 +1,155 @@
+body {
+  margin: 0;
+  padding: 0; }
+
+.container {
+  display: flex;
+  flex-direction: row; }
+
+.title {
+  font-family: "Raleway", sans-serif;
+  font-size: 30px; }
+
+.flexColumn, .leftSection, .contact, .eduBox, .facebook, .rightSection, .header, .experienceBox {
+  display: flex;
+  flex-direction: column; }
+
+.text, .time, .eduText, span {
+  font-family: "Work Sans", sans-serif;
+  font-size: 18px; }
+
+span {
+  display: flex; }
+
+.boxSetting, .profileSum, .experience, .skill {
+  margin-top: 20px;
+  padding: 20px; }
+
+/*left Side*/
+.leftSection {
+  width: 30%;
+  height: 1100px;
+  background-color: #E2CFCA;
+  padding-top: 25px;
+  padding-left: 125px; }
+
+.pic {
+  display: flex;
+  padding-left: 100px; }
+
+img {
+  border-radius: 50%;
+  border-color: #3A1824;
+  border-style: double; }
+
+.leftUnderline {
+  border-top: 5px solid #080808;
+  border-radius: 5px;
+  width: 70%; }
+
+.contact {
+  margin-top: 35px;
+  margin-bottom: 50px;
+  justify-content: center; }
+
+.leftBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 20px; }
+
+.icon {
+  width: 15px;
+  height: 15px;
+  background-color: #3A1824;
+  border: none;
+  color: white;
+  padding: 15px 15px;
+  font-size: 16px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  margin-right: 15px; }
+
+.education {
+  margin-bottom: 50px; }
+
+.eduBox {
+  margin-top: 20px;
+  justify-content: center; }
+
+.eduText {
+  font-weight: bold; }
+
+.eduBoxBottom {
+  margin-top: 10px; }
+
+/* right section*/
+.rightSection {
+  width: 70%;
+  height: 1100px; }
+
+.header {
+  justify-content: center;
+  background-color: #3A1824;
+  color: #ffffff;
+  height: 200px;
+  padding-left: 50px;
+  padding-top: 25px; }
+
+.content {
+  padding-left: 80px; }
+
+.rightUnderline {
+  border-top: 5px solid #080808;
+  border-radius: 5px;
+  width: 100%; }
+
+.experienceBox {
+  margin-top: 20px; }
+
+.expTop {
+  display: flex;
+  flex-direction: row;
+  margin-right: 20px; }
+
+.expRight {
+  margin-left: 100px; }
+
+ul {
+  margin-left: -25px; }
+
+li {
+  font-family: "Work Sans", sans-serif; }
+
+.expBottom {
+  display: flex;
+  flex-direction: row;
+  margin-right: 20px; }
+
+.skillContainer {
+  background-color: #E2CFCA;
+  border-radius: 20px; }
+
+.skills {
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  border-radius: 20px; }
+
+.html {
+  background-color: #3A1824;
+  width: 90%; }
+
+.css {
+  background-color: #3A1824;
+  width: 80%; }
+
+.c {
+  background-color: #3A1824;
+  width: 75%; }
+
+.sass {
+  background-color: #3A1824;
+  width: 60%; }

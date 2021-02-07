@@ -1,0 +1,235 @@
+@import 'base';
+
+body {
+    margin: 0;
+    padding:0;
+
+}
+
+.container {
+   display: flex;
+   flex-direction: row;
+   
+   
+}
+
+
+    
+@mixin underline {
+
+    border-top: 5px solid rgb(8, 8, 8);
+    border-radius: 5px;
+    
+}
+
+@mixin skillBar ($val) {
+    background-color: $myPurple;
+    width: $val;
+
+
+    
+}
+
+
+.title {
+    font-family: $titleFont;
+    font-size: $titleSize;  
+}
+.flexColumn {
+    display: flex;
+    flex-direction: column;
+}
+.text, .time , .eduText, span{
+    font-family: $bodyFont;
+    font-size: 18px;;
+    
+}
+span {
+    display: flex;
+   
+   
+}
+.boxSetting {
+
+    margin-top: 20px;
+    padding: 20px;
+}
+
+
+/*left Side*/
+
+.leftSection {
+   @extend .flexColumn;
+   width: 30%;
+   height: 1100px;
+   background-color: $mypink;
+   padding-top: 25px;
+   padding-left: 125px;
+  
+   
+
+}
+.pic {
+    display: flex;
+    padding-left: 100px;
+}
+img {
+    border-radius: 50%;
+    border-color: $myPurple;
+    border-style:double; 
+  }
+
+.leftUnderline {
+    @include underline();
+    width: 70%;
+}
+
+.contact {
+    @extend .flexColumn;
+    margin-top: 35px;
+    margin-bottom: 50px;
+    justify-content: center;
+}
+.leftBox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+   
+}
+
+.icon {
+  width: 15px;
+  height: 15px;
+  background-color:$myPurple;
+  border: none;
+  color: white;
+  padding: 15px 15px;
+  font-size: 16px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  margin-right: 15px;
+  
+
+}
+.education {
+    margin-bottom: 50px;
+}
+
+.eduBox {
+    @extend .flexColumn;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.eduText {
+    font-weight: bold;
+}
+.eduBoxBottom {
+    margin-top: 10px;
+}
+
+.facebook {
+    @extend .flexColumn;
+    
+
+}
+
+
+
+/* right section*/
+
+.rightSection {
+    @extend .flexColumn;
+    width: 70%;
+    height: 1100px;
+   
+  
+}
+
+.header {
+    @extend .flexColumn;
+    justify-content: center;
+    background-color:$myPurple;
+    color: #ffffff;
+    height: 200px;
+    padding-left: 50px;
+    padding-top: 25px;
+
+}
+.content {
+    padding-left: 80px;
+}
+
+.rightUnderline {
+    @include underline();
+    width: 100%;
+}
+ 
+.profileSum {
+    @extend .boxSetting;
+   
+}
+.experience {
+    @extend .boxSetting;
+    
+}
+
+.experienceBox {
+    @extend .flexColumn;
+    margin-top: 20px;
+    
+}
+.expTop {
+    display: flex;
+    flex-direction: row;
+    margin-right: 20px;
+   
+}
+
+.expRight {
+    margin-left: 100px;
+}
+ul {
+    margin-left: -25px;
+}
+li {
+    font-family: $bodyFont;
+}
+
+.expBottom {
+    display: flex;
+    flex-direction: row;
+    margin-right: 20px;
+}
+
+.skill {
+    @extend .boxSetting;
+}
+.skillContainer {
+
+  background-color: $mypink;
+  border-radius: 20px;
+}
+
+.skills {
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  border-radius: 20px;
+}
+
+.html {
+    @include skillBar(90%);
+}
+.css {
+    @include skillBar(80%);
+}
+.c {
+    @include skillBar(75%);
+}
+.sass {
+    @include skillBar(60%);
+}
